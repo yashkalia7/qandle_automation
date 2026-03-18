@@ -1,0 +1,639 @@
+{
+  "info": {
+    "_postman_id": "78903192-4e0b-4841-be36-e894aba73c0c",
+    "name": "Qandle",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "50971448",
+    "_collection_link": "https://go.postman.co/collection/50971448-78903192-4e0b-4841-be36-e894aba73c0c?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Login_qandle",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "*/*"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "en-US,en;q=0.9"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/x-www-form-urlencoded; charset=UTF-8"
+          },
+          {
+            "key": "Origin",
+            "value": "https://hrconnect.qandle.com"
+          },
+          {
+            "key": "Referer",
+            "value": "https://hrconnect.qandle.com/"
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "empty"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "cors"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "same-origin"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "X-Requested-With",
+            "value": "XMLHttpRequest"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "Cookie",
+            "value": "_ga=GA1.1.18134840.1769268475; _ga_FW27HGDKDM=GS2.1.s1769268474$o1$g0$t1769268513$j21$l0$h0"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "password=Ep4kaAgN&emp_code=91440",
+          "options": {
+            "raw": {
+              "language": "text"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://hrconnect.qandle.com/auth/login",
+          "protocol": "https",
+          "host": [
+            "hrconnect",
+            "qandle",
+            "com"
+          ],
+          "path": [
+            "auth",
+            "login"
+          ]
+        },
+        "description": "Generated from cURL: curl 'https://hrconnect.qandle.com/auth/login' \\\r\n  -H 'Accept: */*' \\\r\n  -H 'Accept-Language: en-US,en;q=0.9' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\\r\n  -b '_ga=GA1.1.18134840.1769268475; _ga_FW27HGDKDM=GS2.1.s1769268474$o1$g0$t1769268513$j21$l0$h0' \\\r\n  -H 'Origin: https://hrconnect.qandle.com' \\\r\n  -H 'Referer: https://hrconnect.qandle.com/' \\\r\n  -H 'Sec-Fetch-Dest: empty' \\\r\n  -H 'Sec-Fetch-Mode: cors' \\\r\n  -H 'Sec-Fetch-Site: same-origin' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  -H 'X-Requested-With: XMLHttpRequest' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  --data-raw 'password=Ep4kaAgN&emp_code=91440'"
+      },
+      "response": []
+    },
+    {
+      "name": "regularize_qandle",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "en-US,en;q=0.9"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWQ3ZDExNDVhMjJmYmUwOGEzOGJmNzEyYjAxMzQwMzBiNWIyZTY5OTRlNzk5ZDU2ODA4MDRiZTViODNjMGNlZjc5OTE1MzhmNmFkYTQ2ZDUiLCJpYXQiOjE3NjkyNzExMTkuMzY5MTM3LCJuYmYiOjE3NjkyNzExMTkuMzY5MTM5LCJleHAiOjE3NjkyNzQ3MTkuMzY3NDQ5LCJzdWIiOiI2OGQzYjgwZmNkMTIxY2IyNWFlYjFjZTAiLCJzY29wZXMiOltdfQ.GoejTssuPQ4N6Vy20c7RvKk3dw6NgaiUf2ljk7JILiy0COHpq3jZAwdemg80_lRQ4py06kYpLIilHvfOMf3tcZevrobe374q06qUA4k2P8lwfNhjxErsNbmcYmtuBSuL7rA6AWVWh2Qo3oH0U7cnms_CeFXOlqMP15BRdQV7Ida96SN4RqpTL2t9M8hb279PJtV0XxTtn-H8pvLObD20UD0CN60Xnx_FR_LFBsu9hHq6Bh4olP2pEzZSbduaV9eG_GtaaysHZJ6ExC9IDR-ERuP9Jhh6Ve9o7MxzGoJrUmD535przP3oc7OmT7uW1_f6UposOuRPG2jZ88FaCmAi-A"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "Origin",
+            "value": "https://hrconnect.qandle.com"
+          },
+          {
+            "key": "Referer",
+            "value": "https://hrconnect.qandle.com/"
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "empty"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "cors"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "same-origin"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "browserName",
+            "value": "Chrome"
+          },
+          {
+            "key": "browserVersion",
+            "value": "143.0.0.0"
+          },
+          {
+            "key": "device",
+            "value": "website"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "Cookie",
+            "value": "_ga=GA1.1.18134840.1769268475; _ga_FW27HGDKDM=GS2.1.s1769268474$o1$g0$t1769268513$j21$l0$h0; _gcl_au=1.1.359732220.1769271093; _ga_RE2PDJCN00=GS2.1.s1769271092$o1$g0$t1769271092$j60$l0$h860144182; hrm_refreshToken=eyJpdiI6IktiR1ZGcWtzT0VxWTQzTlc4dHBEMVE9PSIsInZhbHVlIjoiNklHWXQ5enVYTjNDMmpabzRJY2Jhc2VQZ1VZQ1JDcFRQOWpUVWJHbUREYW5OMjFtSng1VjNNYUxvRUZ4aVFBY01WSVc5R0pvVUtVZzh2ZERqdk5rdmo4S1h6STdTVXl1ZXdNYmZiRkVPQStyVnNCWnM2b3luc0RJSThWN1VuRmdETkRPd1VEc0YvU0xKclFFNERxdEw0QkpJcUYzNXp0K2I3RzJ6cStLV2ZKSjZuSXdRQTVSYVVUVmxoMTFTM0VuR1UyYkdPRm0rcFhlQ0hXTDBkOE1tUzJtNGhuVUxTZnZVc3hEV3NHQVl1ZFVVZUlRRVNQSVFtWDNhSWlKN2V2NVo0K2RLVEpDRThHcGl1WGNKaTdReUtGMVdpSlVFbEJRN2xrU05SemZJQzNZQUZlSlNKejNSMzRhYjJjZ3hMcldtK1JRcTJ3SENBUEgzTjBkK1l5ZC9NQVNQdzFCaGlOT0QyMVA2dkh2MzUrZkpjdnB5Q3lOQmE3dDRaUGxJQWFIaThFYWVrT0FmUVJ0QXliWXFJODJOakJyY3BBNTlQdGRFdFdQSW5QVXArS0lzN2g2MG5ta3R0dS9XYlNDNFFNSldpR3ZJU0prZGJET1BZSkZkdS9KZlovQ3hCM0dXdGZKaEIvcXhXYmV2OFFuV0dVQUFXYnl1UkQyR29DTDUrK2xFTjZJZDErV3dGNDR4QXBZelhEWW5SSWFtREVwb1hadDBldFN2WFVtUDhPNDFETTZIUFJRWEV3KzlBYUF1amozNWtZckZnRFkzV2NSNUY5V0V2Q0tBMmwxanF3RXpianEweUpCTTYrY09Tblc4TWVOQkpGWkNtYncrMC9Vclp1SzZWM3JRdExXeU1yc3lFaytLYlNKU2UzQ1VMbDNVK1JRb3czUHh6dDFhQXRvem84YUVVOUMvaXB1ck1jMUV2QmMxMW5RUDZYVkRuUTNsL0pEMXJmQW5Xanh0WHFzcXlHOVh2dno4QXlkRVRla2ZTbGRnZmp2Qkx3U0NVckVoVVozRVpjNE42eDM4SHdCcFlLOWdhaWdRdHZKM0RBZHRtOElrZzBKWEthOTJlNTdjMzA0Y2psSXFhUXM0T3c5NXVDTGNYQUo2QWgzSkJUVW9nN0NiMjcxYUIwKzRYSEc0SlJ0THZmMkZRTFVDSTVuYUxmWU4ra1V3cFMzY2hRV0ZkdE1jVHQ0RlRVbUlqUyszT3VkTVNQTlpQbkFMUHdqbmVPVjhWN3R1dUV6bldXbEgzQnZTVEdrY2oxcmxSSjJZOWZkaE5xQ2VmUHZkY1Z6SGZ6aVRyZTRvLzRNTi9RMGVYTmJCTnZTK2kvZkw2TFNiVXJGd0NpbSthQ2tpNWVFelZXWGl1Z0NXb1czdVAxMXRGbkt0aDBUYWtTZDE5QTFZcVpnTGFHZzhQMWZNTXM4eTBSeFVIS0VTTzkrQ010S01PNU50RXMwS2t2S010azRvTGh1Z042cmYxVDNvVmpyS1lPZTYzbVBhUXh3NTN4MmNYb0xIL01BWmNMcXJ6ZHJYeVJEWi9UM1UxYWI4bmhHUXR6bFg2a0ZmRWU5WFB5MlZLN1pGUUk4a25LZC9mS3ZVWGpzRHJxalFCbEQxUUdzeUNNR1RkWkJyZ0dZY2tSQWR4WlRPVzQ5SzEwRnZ1cWdpM0tvUnVLU1NRODdkaVZwNkNpRkpOL1JvTWJJMGQ4UkFpQ21vK1ZDZ2pMUGM4dllKUFFacTVobW9uSi9rRW5hY3VqYkNYL1VaN0s1YlVoR1hHNnhhUzdtTm5jUGlJNU1tZG43bDk5ejBmTUNybVozSHgwVk1yN05zeWhOWEtlVHFrRm5aSFpnT1FWNFlrTXhUZG5ZNTZTR0lUNTdKdHRLZGRiNWJwY0pVdXNWbWlYQXZrcFRST091QW5kV2I2Ri9CU1BDVnYvOWMyeUZzUlJQTU81dmZubDVkYllqbEN4emVpODFSSGFiNTZsS1R2cXF4NWZ3WjM5S3VtNkpaUXNReG96elo5TGJmbCsrNmZaS3JxK1RhbWRoUkhOeEJ2S25KcURJK3ltaFpHakJIQ0FiaGdSVmU4RFFHUDRFQkZSd1hKRS9yekZJbVBpM0JDUDRkdUFRcTNRNVdHL1NrckZrR0xHQlNZTDRPblA3WUZkaDdKN2FRQ05RTytPWkxIZ2xXY2RVZms3a0U5VmNJUlQ3b09POGNuNDBvVjVkcXlTNXFtWkF2RnF1VC9seFduQUFPNHJqN3E1Z3Z0cTlJTkFZR05JeEp4cENhMjlpSmFqVWhtbVNxVG5BdVRNaDNLVXg2NjBQNE1URGsyM1hxTkhSSnJGWm8rVGVzVHFXYzBuQ1ZyZ0I4SHNnM21CK0FnbTF5TlBMRFRiSlhhYmM0QlN3ajhOcENNT01mcFZOMTU0MS9VVzQ3VkNSSmRhTXJ3RTl4UE0zYUNFOTVrcDNqYk9vdkpsbVBGb3dSODdTK24rakhVUTdBRHVNZlU0NUQxa2tYbDFldU83U2luczZRcklOaDNNOXNnZ3lRSWNLSkIyV1BaZ0VnT0ozT2UyQnpOQWRueVQyS01PMWlrbkord2RETWhhTmJROVBNZnVHM01HaEFyR2NkcmpwejBKM3VGZ0VUekQxS2R1MnkyWjdNenM1TzNncHBhUGN2ZTBoQVFOaWtmd1NUdS9RbnRMcDVNQ1I2VG1ZanUreTIyRVNiVllYOE94czZESTI5OCtCYTErYWZWQ0dSeVk0ZTFQSEFTdXlVVFFmL042Z05PN1R6RlBpWDVSSEw4TElXYnBKdXorUXR3cko2RzhKN1c3dnYreEdBVERtIiwibWFjIjoiNWFjYTIxNzk4YzYyYjY0MzI2OGYxMTU4NjczMTUxMWU4OGI1MDhlNGMzYzJmMzA1NWI4ZGE1OTFiYjhkYTQ1MiIsInRhZyI6IiJ9"
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "category",
+              "value": "5d389c7839473e6a728b92dc",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][is_clock_out_selfie]",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][is_clock_in_selfie]",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][date]",
+              "value": "24-Jan-2026",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][date_formated]",
+              "value": "24-Jan-2026",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][date_timestamp]",
+              "value": "1769193000",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][total_break_hours]",
+              "value": "00.00",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][cal_total_break_hours]",
+              "value": "0",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][in_time]",
+              "value": "2026-01-24T04:00:00.000Z",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][out_time]",
+              "value": "2026-01-24T16:12:00.000Z",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][total_hours]",
+              "value": "0",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][total_hours_seconds]",
+              "value": "00:00:00",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][cal_total_hours]",
+              "value": "0",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][total_working_hours]",
+              "value": "0",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][source]",
+              "value": "",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][total_break_hours_formatted]",
+              "value": "00:00",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][is_week_off]",
+              "value": "true",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][holiday]",
+              "value": "true",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][is_calender_holiday]",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][holiday_reason]",
+              "value": "Week off",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][remark]",
+              "value": "Week off",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][is_autoclockout]",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][is_regularised]",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][flag]",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][isIndividual]",
+              "value": "true",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][isCheck]",
+              "value": "false",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][start_time]",
+              "value": "9:30",
+              "type": "text"
+            },
+            {
+              "key": "request_data[0][end_time]",
+              "value": "21:42",
+              "type": "text"
+            },
+            {
+              "key": "comment",
+              "value": "thane office",
+              "type": "text"
+            },
+            {
+              "key": "doc_file",
+              "value": "null",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://hrconnect.qandle.com/timeattendance/employee/regularization",
+          "protocol": "https",
+          "host": [
+            "hrconnect",
+            "qandle",
+            "com"
+          ],
+          "path": [
+            "timeattendance",
+            "employee",
+            "regularization"
+          ]
+        },
+        "description": "Generated from cURL: curl 'https://hrconnect.qandle.com/timeattendance/employee/regularization' \\\r\n  -H 'Accept: application/json, text/plain, */*' \\\r\n  -H 'Accept-Language: en-US,en;q=0.9' \\\r\n  -H 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNWQ3ZDExNDVhMjJmYmUwOGEzOGJmNzEyYjAxMzQwMzBiNWIyZTY5OTRlNzk5ZDU2ODA4MDRiZTViODNjMGNlZjc5OTE1MzhmNmFkYTQ2ZDUiLCJpYXQiOjE3NjkyNzExMTkuMzY5MTM3LCJuYmYiOjE3NjkyNzExMTkuMzY5MTM5LCJleHAiOjE3NjkyNzQ3MTkuMzY3NDQ5LCJzdWIiOiI2OGQzYjgwZmNkMTIxY2IyNWFlYjFjZTAiLCJzY29wZXMiOltdfQ.GoejTssuPQ4N6Vy20c7RvKk3dw6NgaiUf2ljk7JILiy0COHpq3jZAwdemg80_lRQ4py06kYpLIilHvfOMf3tcZevrobe374q06qUA4k2P8lwfNhjxErsNbmcYmtuBSuL7rA6AWVWh2Qo3oH0U7cnms_CeFXOlqMP15BRdQV7Ida96SN4RqpTL2t9M8hb279PJtV0XxTtn-H8pvLObD20UD0CN60Xnx_FR_LFBsu9hHq6Bh4olP2pEzZSbduaV9eG_GtaaysHZJ6ExC9IDR-ERuP9Jhh6Ve9o7MxzGoJrUmD535przP3oc7OmT7uW1_f6UposOuRPG2jZ88FaCmAi-A' \\\r\n  -H 'Connection: keep-alive' \\\r\n  -H 'Content-Type: multipart/form-data; boundary=----WebKitFormBoundary1iSH2YR2kVI7ZrN1' \\\r\n  -b '_ga=GA1.1.18134840.1769268475; _ga_FW27HGDKDM=GS2.1.s1769268474$o1$g0$t1769268513$j21$l0$h0; _gcl_au=1.1.359732220.1769271093; _ga_RE2PDJCN00=GS2.1.s1769271092$o1$g0$t1769271092$j60$l0$h860144182; hrm_refreshToken=eyJpdiI6IktiR1ZGcWtzT0VxWTQzTlc4dHBEMVE9PSIsInZhbHVlIjoiNklHWXQ5enVYTjNDMmpabzRJY2Jhc2VQZ1VZQ1JDcFRQOWpUVWJHbUREYW5OMjFtSng1VjNNYUxvRUZ4aVFBY01WSVc5R0pvVUtVZzh2ZERqdk5rdmo4S1h6STdTVXl1ZXdNYmZiRkVPQStyVnNCWnM2b3luc0RJSThWN1VuRmdETkRPd1VEc0YvU0xKclFFNERxdEw0QkpJcUYzNXp0K2I3RzJ6cStLV2ZKSjZuSXdRQTVSYVVUVmxoMTFTM0VuR1UyYkdPRm0rcFhlQ0hXTDBkOE1tUzJtNGhuVUxTZnZVc3hEV3NHQVl1ZFVVZUlRRVNQSVFtWDNhSWlKN2V2NVo0K2RLVEpDRThHcGl1WGNKaTdReUtGMVdpSlVFbEJRN2xrU05SemZJQzNZQUZlSlNKejNSMzRhYjJjZ3hMcldtK1JRcTJ3SENBUEgzTjBkK1l5ZC9NQVNQdzFCaGlOT0QyMVA2dkh2MzUrZkpjdnB5Q3lOQmE3dDRaUGxJQWFIaThFYWVrT0FmUVJ0QXliWXFJODJOakJyY3BBNTlQdGRFdFdQSW5QVXArS0lzN2g2MG5ta3R0dS9XYlNDNFFNSldpR3ZJU0prZGJET1BZSkZkdS9KZlovQ3hCM0dXdGZKaEIvcXhXYmV2OFFuV0dVQUFXYnl1UkQyR29DTDUrK2xFTjZJZDErV3dGNDR4QXBZelhEWW5SSWFtREVwb1hadDBldFN2WFVtUDhPNDFETTZIUFJRWEV3KzlBYUF1amozNWtZckZnRFkzV2NSNUY5V0V2Q0tBMmwxanF3RXpianEweUpCTTYrY09Tblc4TWVOQkpGWkNtYncrMC9Vclp1SzZWM3JRdExXeU1yc3lFaytLYlNKU2UzQ1VMbDNVK1JRb3czUHh6dDFhQXRvem84YUVVOUMvaXB1ck1jMUV2QmMxMW5RUDZYVkRuUTNsL0pEMXJmQW5Xanh0WHFzcXlHOVh2dno4QXlkRVRla2ZTbGRnZmp2Qkx3U0NVckVoVVozRVpjNE42eDM4SHdCcFlLOWdhaWdRdHZKM0RBZHRtOElrZzBKWEthOTJlNTdjMzA0Y2psSXFhUXM0T3c5NXVDTGNYQUo2QWgzSkJUVW9nN0NiMjcxYUIwKzRYSEc0SlJ0THZmMkZRTFVDSTVuYUxmWU4ra1V3cFMzY2hRV0ZkdE1jVHQ0RlRVbUlqUyszT3VkTVNQTlpQbkFMUHdqbmVPVjhWN3R1dUV6bldXbEgzQnZTVEdrY2oxcmxSSjJZOWZkaE5xQ2VmUHZkY1Z6SGZ6aVRyZTRvLzRNTi9RMGVYTmJCTnZTK2kvZkw2TFNiVXJGd0NpbSthQ2tpNWVFelZXWGl1Z0NXb1czdVAxMXRGbkt0aDBUYWtTZDE5QTFZcVpnTGFHZzhQMWZNTXM4eTBSeFVIS0VTTzkrQ010S01PNU50RXMwS2t2S010azRvTGh1Z042cmYxVDNvVmpyS1lPZTYzbVBhUXh3NTN4MmNYb0xIL01BWmNMcXJ6ZHJYeVJEWi9UM1UxYWI4bmhHUXR6bFg2a0ZmRWU5WFB5MlZLN1pGUUk4a25LZC9mS3ZVWGpzRHJxalFCbEQxUUdzeUNNR1RkWkJyZ0dZY2tSQWR4WlRPVzQ5SzEwRnZ1cWdpM0tvUnVLU1NRODdkaVZwNkNpRkpOL1JvTWJJMGQ4UkFpQ21vK1ZDZ2pMUGM4dllKUFFacTVobW9uSi9rRW5hY3VqYkNYL1VaN0s1YlVoR1hHNnhhUzdtTm5jUGlJNU1tZG43bDk5ejBmTUNybVozSHgwVk1yN05zeWhOWEtlVHFrRm5aSFpnT1FWNFlrTXhUZG5ZNTZTR0lUNTdKdHRLZGRiNWJwY0pVdXNWbWlYQXZrcFRST091QW5kV2I2Ri9CU1BDVnYvOWMyeUZzUlJQTU81dmZubDVkYllqbEN4emVpODFSSGFiNTZsS1R2cXF4NWZ3WjM5S3VtNkpaUXNReG96elo5TGJmbCsrNmZaS3JxK1RhbWRoUkhOeEJ2S25KcURJK3ltaFpHakJIQ0FiaGdSVmU4RFFHUDRFQkZSd1hKRS9yekZJbVBpM0JDUDRkdUFRcTNRNVdHL1NrckZrR0xHQlNZTDRPblA3WUZkaDdKN2FRQ05RTytPWkxIZ2xXY2RVZms3a0U5VmNJUlQ3b09POGNuNDBvVjVkcXlTNXFtWkF2RnF1VC9seFduQUFPNHJqN3E1Z3Z0cTlJTkFZR05JeEp4cENhMjlpSmFqVWhtbVNxVG5BdVRNaDNLVXg2NjBQNE1URGsyM1hxTkhSSnJGWm8rVGVzVHFXYzBuQ1ZyZ0I4SHNnM21CK0FnbTF5TlBMRFRiSlhhYmM0QlN3ajhOcENNT01mcFZOMTU0MS9VVzQ3VkNSSmRhTXJ3RTl4UE0zYUNFOTVrcDNqYk9vdkpsbVBGb3dSODdTK24rakhVUTdBRHVNZlU0NUQxa2tYbDFldU83U2luczZRcklOaDNNOXNnZ3lRSWNLSkIyV1BaZ0VnT0ozT2UyQnpOQWRueVQyS01PMWlrbkord2RETWhhTmJROVBNZnVHM01HaEFyR2NkcmpwejBKM3VGZ0VUekQxS2R1MnkyWjdNenM1TzNncHBhUGN2ZTBoQVFOaWtmd1NUdS9RbnRMcDVNQ1I2VG1ZanUreTIyRVNiVllYOE94czZESTI5OCtCYTErYWZWQ0dSeVk0ZTFQSEFTdXlVVFFmL042Z05PN1R6RlBpWDVSSEw4TElXYnBKdXorUXR3cko2RzhKN1c3dnYreEdBVERtIiwibWFjIjoiNWFjYTIxNzk4YzYyYjY0MzI2OGYxMTU4NjczMTUxMWU4OGI1MDhlNGMzYzJmMzA1NWI4ZGE1OTFiYjhkYTQ1MiIsInRhZyI6IiJ9' \\\r\n  -H 'Origin: https://hrconnect.qandle.com' \\\r\n  -H 'Referer: https://hrconnect.qandle.com/' \\\r\n  -H 'Sec-Fetch-Dest: empty' \\\r\n  -H 'Sec-Fetch-Mode: cors' \\\r\n  -H 'Sec-Fetch-Site: same-origin' \\\r\n  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n  -H 'browserName: Chrome' \\\r\n  -H 'browserVersion: 143.0.0.0' \\\r\n  -H 'device: website' \\\r\n  -H 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n  -H 'sec-ch-ua-mobile: ?0' \\\r\n  -H 'sec-ch-ua-platform: \"Windows\"' \\\r\n  --data-raw $'------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"category\"\\r\\n\\r\\n5d389c7839473e6a728b92dc\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][is_clock_out_selfie]\"\\r\\n\\r\\nfalse\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][is_clock_in_selfie]\"\\r\\n\\r\\nfalse\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][date]\"\\r\\n\\r\\n24-Jan-2026\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][date_formated]\"\\r\\n\\r\\n24-Jan-2026\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][date_timestamp]\"\\r\\n\\r\\n1769193000\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][total_break_hours]\"\\r\\n\\r\\n00.00\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][cal_total_break_hours]\"\\r\\n\\r\\n0\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][in_time]\"\\r\\n\\r\\n2026-01-24T04:00:00.000Z\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][out_time]\"\\r\\n\\r\\n2026-01-24T16:12:00.000Z\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][total_hours]\"\\r\\n\\r\\n0\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][total_hours_seconds]\"\\r\\n\\r\\n00:00:00\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][cal_total_hours]\"\\r\\n\\r\\n0\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][total_working_hours]\"\\r\\n\\r\\n0\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][source]\"\\r\\n\\r\\n\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][total_break_hours_formatted]\"\\r\\n\\r\\n00:00\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][is_week_off]\"\\r\\n\\r\\ntrue\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][holiday]\"\\r\\n\\r\\ntrue\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][is_calender_holiday]\"\\r\\n\\r\\nfalse\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][holiday_reason]\"\\r\\n\\r\\nWeek off\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][remark]\"\\r\\n\\r\\nWeek off\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][is_autoclockout]\"\\r\\n\\r\\nfalse\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][is_regularised]\"\\r\\n\\r\\nfalse\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][flag]\"\\r\\n\\r\\nfalse\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][isIndividual]\"\\r\\n\\r\\ntrue\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][isCheck]\"\\r\\n\\r\\nfalse\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][start_time]\"\\r\\n\\r\\n9:30\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"request_data[0][end_time]\"\\r\\n\\r\\n21:42\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"comment\"\\r\\n\\r\\nthane office\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1\\r\\nContent-Disposition: form-data; name=\"doc_file\"\\r\\n\\r\\nnull\\r\\n------WebKitFormBoundary1iSH2YR2kVI7ZrN1--\\r\\n'"
+      },
+      "response": []
+    },
+    {
+      "name": "register_endpoint",
+      "request": {
+        "method": "GET",
+        "header": []
+      },
+      "response": []
+    },
+    {
+      "name": "http://localhost:8000/register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"name\": \"John Doe\", \"qandle_email\": \"john@company.com\", \"qandle_emp_code\": \"EMP001\", \"password\": \"secret123\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8000/register",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8000",
+          "path": [
+            "register"
+          ]
+        },
+        "description": "Generated from cURL: curl -X POST http://localhost:8000/register \\\r\n  -H \"Content-Type: application/json\" \\\r\n  -d '{\"name\": \"John Doe\", \"qandle_email\": \"john@company.com\", \"qandle_emp_code\": \"EMP001\", \"password\": \"secret123\"}'\r\n"
+      },
+      "response": []
+    },
+    {
+      "name": "sample regu",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json, text/plain, */*"
+          },
+          {
+            "key": "Accept-Language",
+            "value": "en-US,en;q=0.9"
+          },
+          {
+            "key": "Authorization",
+            "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzMyOTFjODM2MmY2NGJiMjVmZjA5ZjUwZTBkY2YwMTljNTVjNDMxMzljZGIwYWRmOGUyODllOTNhOTg4ZDJkNjgzYjRjYTZjYjY4MDhkNDkiLCJpYXQiOjE3Njk1OTYzNTAuNjM0ODM1LCJuYmYiOjE3Njk1OTYzNTAuNjM0ODM3LCJleHAiOjE3Njk1OTk5NTAuNjMyOTg2LCJzdWIiOiI2OGQzYjgwZmNkMTIxY2IyNWFlYjFjZTAiLCJzY29wZXMiOltdfQ.j7pDieRTrBVmzq4is8ddesSnfWIrD3X_2o3w_CBNgbMP1wqR0-C2jDiwSuXAj-QSl-bFTBRGSskoRh22pto--mfkr3J5Ba_jJKq6T6Hh2A7QbOQBqK5DyLzpDGOReouKkFVX5rcV7D8mtPLXcD0u0Q1uVnnmrqsrQusdjmqWULWixcRcv_WTgnGmo7sLJU4Sc1lkpjQfCdeZr41doosQuCLKxPzlTqET_3KhJSylPC-Z4aLfDn6wlWyDHlbtQQOGZq_1oKV2uQWjEXDq2Oej_M92XHCQwh1V3VtVgAlu_HsHB_0Ajl-P5iL8EmCQKoyhxht1Qtr5h0uz_WruaZOK1Q"
+          },
+          {
+            "key": "Connection",
+            "value": "keep-alive"
+          },
+          {
+            "key": "Origin",
+            "value": "https://hrconnect.qandle.com"
+          },
+          {
+            "key": "Referer",
+            "value": "https://hrconnect.qandle.com/"
+          },
+          {
+            "key": "Sec-Fetch-Dest",
+            "value": "empty"
+          },
+          {
+            "key": "Sec-Fetch-Mode",
+            "value": "cors"
+          },
+          {
+            "key": "Sec-Fetch-Site",
+            "value": "same-origin"
+          },
+          {
+            "key": "User-Agent",
+            "value": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36"
+          },
+          {
+            "key": "browserName",
+            "value": "Chrome"
+          },
+          {
+            "key": "browserVersion",
+            "value": "143.0.0.0"
+          },
+          {
+            "key": "device",
+            "value": "website"
+          },
+          {
+            "key": "sec-ch-ua",
+            "value": "\"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\""
+          },
+          {
+            "key": "sec-ch-ua-mobile",
+            "value": "?0"
+          },
+          {
+            "key": "sec-ch-ua-platform",
+            "value": "\"Windows\""
+          },
+          {
+            "key": "Cookie",
+            "value": "_ga=GA1.1.18134840.1769268475; _ga_FW27HGDKDM=GS2.1.s1769268474$o1$g0$t1769268513$j21$l0$h0; _gcl_au=1.1.359732220.1769271093; _ga_RE2PDJCN00=GS2.1.s1769271092$o1$g0$t1769271092$j60$l0$h860144182; hrm_refreshToken=..."
+          }
+        ],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "type": "text",
+              "key": "category",
+              "value": "5d389c7839473e6a728b92dc"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][is_clock_out_selfie]",
+              "value": "false"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][is_clock_in_selfie]",
+              "value": "false"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][date]",
+              "value": "27-Jan-2026"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][date_formated]",
+              "value": "27-Jan-2026"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][date_timestamp]",
+              "value": "1769538600"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][total_break_hours]",
+              "value": "00.00"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][cal_total_break_hours]",
+              "value": "0"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][in_time]",
+              "value": "2026-01-27T04:00:00.000Z"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][out_time]",
+              "value": "2026-01-27T16:12:00.000Z"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][total_hours]",
+              "value": "0"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][total_hours_seconds]",
+              "value": "00:00:00"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][cal_total_hours]",
+              "value": "0"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][total_working_hours]",
+              "value": "0"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][source]",
+              "value": ""
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][total_break_hours_formatted]",
+              "value": "00:00"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][is_week_off]",
+              "value": "true"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][holiday]",
+              "value": "true"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][is_calender_holiday]",
+              "value": "false"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][holiday_reason]",
+              "value": "Week off"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][remark]",
+              "value": "Week off"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][is_autoclockout]",
+              "value": "false"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][is_regularised]",
+              "value": "false"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][flag]",
+              "value": "false"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][isIndividual]",
+              "value": "true"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][isCheck]",
+              "value": "false"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][start_time]",
+              "value": "9:30"
+            },
+            {
+              "type": "text",
+              "key": "request_data[0][end_time]",
+              "value": "21:42"
+            },
+            {
+              "type": "text",
+              "key": "comment",
+              "value": "thane office"
+            },
+            {
+              "type": "text",
+              "key": "doc_file",
+              "value": "null"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://hrconnect.qandle.com/timeattendance/employee/regularization",
+          "protocol": "https",
+          "host": [
+            "hrconnect",
+            "qandle",
+            "com"
+          ],
+          "path": [
+            "timeattendance",
+            "employee",
+            "regularization"
+          ]
+        },
+        "description": "Generated from cURL: curl --location 'https://hrconnect.qandle.com/timeattendance/employee/regularization' \\\r\n--header 'Accept: application/json, text/plain, */*' \\\r\n--header 'Accept-Language: en-US,en;q=0.9' \\\r\n--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNzMyOTFjODM2MmY2NGJiMjVmZjA5ZjUwZTBkY2YwMTljNTVjNDMxMzljZGIwYWRmOGUyODllOTNhOTg4ZDJkNjgzYjRjYTZjYjY4MDhkNDkiLCJpYXQiOjE3Njk1OTYzNTAuNjM0ODM1LCJuYmYiOjE3Njk1OTYzNTAuNjM0ODM3LCJleHAiOjE3Njk1OTk5NTAuNjMyOTg2LCJzdWIiOiI2OGQzYjgwZmNkMTIxY2IyNWFlYjFjZTAiLCJzY29wZXMiOltdfQ.j7pDieRTrBVmzq4is8ddesSnfWIrD3X_2o3w_CBNgbMP1wqR0-C2jDiwSuXAj-QSl-bFTBRGSskoRh22pto--mfkr3J5Ba_jJKq6T6Hh2A7QbOQBqK5DyLzpDGOReouKkFVX5rcV7D8mtPLXcD0u0Q1uVnnmrqsrQusdjmqWULWixcRcv_WTgnGmo7sLJU4Sc1lkpjQfCdeZr41doosQuCLKxPzlTqET_3KhJSylPC-Z4aLfDn6wlWyDHlbtQQOGZq_1oKV2uQWjEXDq2Oej_M92XHCQwh1V3VtVgAlu_HsHB_0Ajl-P5iL8EmCQKoyhxht1Qtr5h0uz_WruaZOK1Q' \\\r\n--header 'Connection: keep-alive' \\\r\n--header 'Origin: https://hrconnect.qandle.com' \\\r\n--header 'Referer: https://hrconnect.qandle.com/' \\\r\n--header 'Sec-Fetch-Dest: empty' \\\r\n--header 'Sec-Fetch-Mode: cors' \\\r\n--header 'Sec-Fetch-Site: same-origin' \\\r\n--header 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36' \\\r\n--header 'browserName: Chrome' \\\r\n--header 'browserVersion: 143.0.0.0' \\\r\n--header 'device: website' \\\r\n--header 'sec-ch-ua: \"Google Chrome\";v=\"143\", \"Chromium\";v=\"143\", \"Not A(Brand\";v=\"24\"' \\\r\n--header 'sec-ch-ua-mobile: ?0' \\\r\n--header 'sec-ch-ua-platform: \"Windows\"' \\\r\n--header 'Cookie: _ga=GA1.1.18134840.1769268475; _ga_FW27HGDKDM=GS2.1.s1769268474$o1$g0$t1769268513$j21$l0$h0; _gcl_au=1.1.359732220.1769271093; _ga_RE2PDJCN00=GS2.1.s1769271092$o1$g0$t1769271092$j60$l0$h860144182; hrm_refreshToken=...' \\\r\n--form 'category=\"5d389c7839473e6a728b92dc\"' \\\r\n--form 'request_data[0][is_clock_out_selfie]=\"false\"' \\\r\n--form 'request_data[0][is_clock_in_selfie]=\"false\"' \\\r\n--form 'request_data[0][date]=\"27-Jan-2026\"' \\\r\n--form 'request_data[0][date_formated]=\"27-Jan-2026\"' \\\r\n--form 'request_data[0][date_timestamp]=\"1769538600\"' \\\r\n--form 'request_data[0][total_break_hours]=\"00.00\"' \\\r\n--form 'request_data[0][cal_total_break_hours]=\"0\"' \\\r\n--form 'request_data[0][in_time]=\"2026-01-27T04:00:00.000Z\"' \\\r\n--form 'request_data[0][out_time]=\"2026-01-27T16:12:00.000Z\"' \\\r\n--form 'request_data[0][total_hours]=\"0\"' \\\r\n--form 'request_data[0][total_hours_seconds]=\"00:00:00\"' \\\r\n--form 'request_data[0][cal_total_hours]=\"0\"' \\\r\n--form 'request_data[0][total_working_hours]=\"0\"' \\\r\n--form 'request_data[0][source]=\"\"' \\\r\n--form 'request_data[0][total_break_hours_formatted]=\"00:00\"' \\\r\n--form 'request_data[0][is_week_off]=\"true\"' \\\r\n--form 'request_data[0][holiday]=\"true\"' \\\r\n--form 'request_data[0][is_calender_holiday]=\"false\"' \\\r\n--form 'request_data[0][holiday_reason]=\"Week off\"' \\\r\n--form 'request_data[0][remark]=\"Week off\"' \\\r\n--form 'request_data[0][is_autoclockout]=\"false\"' \\\r\n--form 'request_data[0][is_regularised]=\"false\"' \\\r\n--form 'request_data[0][flag]=\"false\"' \\\r\n--form 'request_data[0][isIndividual]=\"true\"' \\\r\n--form 'request_data[0][isCheck]=\"false\"' \\\r\n--form 'request_data[0][start_time]=\"9:30\"' \\\r\n--form 'request_data[0][end_time]=\"21:42\"' \\\r\n--form 'comment=\"thane office\"' \\\r\n--form 'doc_file=\"null\"'\r\n"
+      },
+      "response": []
+    }
+  ]
+}

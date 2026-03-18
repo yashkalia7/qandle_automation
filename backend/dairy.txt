@@ -1,0 +1,3 @@
+1/26/2026: i am configuring the backend for the project and i have succesfully built the 
+state diagram for it. now im trying to break schemas and stuff too.
+1/27/2026: create a new env cause we getting a lotta issues

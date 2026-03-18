@@ -1,0 +1,37 @@
+# ===== Python Backend =====
+backend/venv/
+backend/__pycache__/
+backend/**/__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.env
+
+# ===== Expo / React Native Frontend =====
+qandle-mobile/node_modules/
+qandle-mobile/.expo/
+qandle-mobile/dist/
+qandle-mobile/web-build/
+qandle-mobile/expo-env.d.ts
+qandle-mobile/.kotlin/
+qandle-mobile/*.orig.*
+qandle-mobile/*.jks
+qandle-mobile/*.p8
+qandle-mobile/*.p12
+qandle-mobile/*.key
+qandle-mobile/*.mobileprovision
+qandle-mobile/.metro-health-check*
+qandle-mobile/app-example/
+qandle-mobile/ios/
+qandle-mobile/android/
+
+# ===== General =====
+.DS_Store
+Thumbs.db
+*.pem
+*.log
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.tsbuildinfo
+.env*.local
