@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+motor
+pydantic
+python-dotenv
+apscheduler
+exponent-server-sdk
+httpx

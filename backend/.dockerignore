@@ -1,0 +1,22 @@
+# Virtual environment — huge, not needed (pip install runs inside container)
+env-pymongo-fastapi-crud/
+venv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# .env file — secrets should be set via Render's dashboard, not baked into image
+.env
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+
+# Dev notes
+*.md
+*.txt
+!requirements.txt
